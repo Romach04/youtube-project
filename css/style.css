@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*header*/
+
+.header {
+  align-items: center;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 70px;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+}
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+  height: 17px;
+  width: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 28px;
+}
+.menu-line {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #1f2022;
+  border-radius: 20px;
+}
+.icon-youtube {
+  width: 116px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 59px;
+}
+
+.search-wrap {
+  max-width: 830px;
+  width: 50%;
+  position: relative;
+  margin-right: auto;
+}
+.search__input {
+  outline: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+  border-radius: 22px;
+}
+.search__button {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+  background: transparent;
+  border: none;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+}
+.icons-group {
+  display: flex;
+  align-items: center;
+}
+.icons_link {
+  text-decoration: none;
+  opacity: 0.24;
+}
+.icons_link:hover {
+  opacity: 0.8;
+}
+.icons_link:not(:last-child) {
+  margin-right: 50px;
+}
+.userAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*sidebar */
+
+.sidebar {
+  position: fixed;
+  width: 255px;
+  left: 0;
+  top: 114px;
+  padding-left: 32px;
+  background-color: white;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+}
+
+.nav-menu {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 0;
+  list-style: none;
+}
+.nav_item {
+  margin-bottom: 28px;
+}
+.nav_item.icon {
+  fill: #898989;
+}
+.nav_text {
+  padding-left: 15px;
+}
+.nav_link {
+  cursor: pointer;
+  color: #898989;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav_link:hover {
+  color: #ff0000;
+}
+.nav_link:hover .icon {
+  color: #ff0000;
+  fill: #ff0000;
+}
+.nav_img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.nav-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+/*content*/
+
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 114px;
+  padding-left: 255px;
+}
+.channel {
+  margin-right: 70px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.channel_text {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+}
+.channel_link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.channel_img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.video {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.video-card {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.video_img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.video_time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 3px 9px;
+  color: rgb(255, 255, 255);
+}
+.video-title {
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+.video_info {
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video_views {
+  /*Просмотры*/
+  margin-right: 5px;
+}
+.video_views:after {
+  /*Псевдо элемент для точки*/
+  content: '';
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.chennal-button {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+.Recommended .video_img {
+  width: 540px;
+  height: 250px;
+}
+.Recommended .video-card {
+  width: 540px;
+  height: 250px;
+}

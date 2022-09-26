@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+		<link type="icon	" rel="shortcut icon" href="/img/youtube16.ico">
+    <title>You tube</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="menu-button">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+      <div class="icon-youtube">
+        <svg class="icon" width="116px" height="25px">
+          <use href="/img/SVG.svg#icon-youtube"></use>
+        </svg>
+      </div>
+      <div class="search-wrap">
+        <input
+          type="search"
+          name="search"
+          class="search__input"
+          placeholder="Search"
+        />
+        <button type="submit" class="search__button">
+          <svg class="icon" width="19px" height="19px">
+            <use href="/img/SVG.svg#search-button"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="icons-group">
+        <a href="#" class="icons_link">
+          <svg class="icon icon-vodeo" width="27px" height="21px">
+            <use href="/img/SVG.svg#icon-vodeo"></use>
+          </svg>
+        </a>
+        <a href="#" class="icons_link">
+          <svg class="icon icon-apps" width="21px" height="21px">
+            <use href="/img/SVG.svg#icon-apps"></use>
+          </svg>
+        </a>
+        <a href="#" class="icons_link">
+          <svg class="icon icon-bell" width="22px" height="26px">
+            <use href="/img/SVG.svg#icon-bell"></use>
+          </svg>
+        </a>
+				<div>
+					<a href="#">
+						<img
+							src="/img/avatar/avatar.png"
+							alt="userAvatar"
+							class="userAvatar"
+						/>
+					</a>
+				</div>
+     
+
+    </header>
+    <!--Конец шапки Header-->
+    <div class="container">
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon-home" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-home"></use>
+                </svg>
+                <span class="nav_text">Home</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon-trending" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-trending"></use>
+                </svg>
+                <span class="nav_text">Trending</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon-subscriptions" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-subscriptions"></use>
+                </svg>
+                <span class="nav_text">Subscriptions</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="nav-menu">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon-library" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-library"></use>
+                </svg>
+                <span class="nav_text">Library</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-history"></use>
+                </svg>
+                <span class="nav_text">History</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-watch later"></use>
+                </svg>
+                <span class="nav_text">Watch later</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-favourites"></use>
+                </svg>
+                <span class="nav_text">Favourites</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-liked videos"></use>
+                </svg>
+                <span class="nav_text">Liked videos</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-music"></use>
+                </svg>
+                <span class="nav_text">Music</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-games"></use>
+                </svg>
+                <span class="nav_text">Games</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon" width="20px" height="19px">
+                  <use href="/img/SVG.svg#icon-show more"></use>
+                </svg>
+                <span class="nav_text">Show more</span>
+              </a>
+            </li>
+          </ul>
+				</nav>
+
+        <h2 class="nav-title">Subscriptions</h2>
+        <ul class="nav-menu">
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img
+                src="/img/avatar/avatar-Gussie Singleton.png"
+                alt="avatar"
+                class="nav_img"
+              />
+              <span class="nav_text">Gussie Singleton</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img
+                src="/img/avatar/avatar-Nora Francis.png"
+                alt="avatar"
+                class="nav_img"
+              />
+              <span class="nav_text">Nora Francis</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img
+                src="/img/avatar/avatar-Belle Briggs.png"
+                alt="avatar"
+                class="nav_img"
+              />
+              <span class="nav_text">Belle Briggs</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img
+                src="/img/avatar/avatar-Eunice Cortez.png"
+                alt="avatar"
+                class="nav_img"
+              />
+              <span class="nav_text">Eunice Cortez</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img
+                src="/img/avatar/avatar-Emma Hanson.png"
+                alt="avatar"
+                class="nav_img"
+              />
+              <span class="nav_text">Emma Hanson</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img
+                src="/img/avatar/avatar-Leah Berry.png"
+                alt="avatar"
+                class="nav_img"
+              />
+              <span class="nav_text">Leah Berry</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-menu">
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <svg class="icon icon-setting" width="20px" height="19px">
+                <use href="/img/SVG.svg#icon-setting"></use>
+              </svg>
+              <span class="nav_text">Settongs</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!--Конец бокового меню Aside c классом Sidebar-->
+      <main class="content">
+        <div class="channel DollieBlair">
+	        	<div class="channel-title">
+		          <a href="#" class="channel_link">
+		            <img
+		              src="/img/avatar/avatar-Dollie Blair.png"
+		              alt=""
+		              class="channel_img"
+		            />
+								<span class="channel_text">Dollie Blair</span>
+		          </a>
+							<!-- If we need navigation buttons -->
+	
+	            <div class="chennal-button">
+					      <div class="chennal-button-prev">
+									<svg class="icon" width="28px" height="28px">
+										<use xlink:href="/img/SVG.svg#left"></use>
+									</svg>
+								</div>
+								<div class="chennal-button-next">
+									<svg class="icon" width="28px" height="28px">
+										<use xlink:href="/img/SVG.svg#right"></use>
+									</svg>
+								</div>
+			        </div>
+						</div>
+						<!-- Slider main container -->
+	         <div class="swiper-container channel-sliper">
+	         <!-- Additional required wrapper -->
+	           <div class="swiper-wrapper">
+	           <!-- Slides -->
+	             <div class="swiper-slide">
+	               <div class="video"> 
+	                 <div class="video-card">
+	                   <img src="/img/channel/Dollie Blairl-img.png" alt="Dollie Blairl-img" class="video_img">
+									   	 <span class="video_time">4:15</span>
+									 </div>
+									 <!-- Конец video -->
+									 <h3 class="video-title">A bref Hictory of Creation</h3>
+									 <div class="video_info">
+										 <span class="video_counter">
+											 <span class="video_views">80k views</span>
+											 <span class="video_date">3 days ago</span>
+										 </span>
+										 <span class="video_chennal">Dollie Blair</span>
+									 </div>
+	               </div>
+								 <!-- Конец video-card -->
+							 </div>
+							  <!-- Конец 1 слайда -->
+	             <div class="swiper-slide">
+								<div class="video"> 
+									<div class="video-card">
+										<img src="/img/channel/Dollie Blairl_2-img.png" alt="Dollie Blairl-img" class="video_img">
+											 <span class="video_time">8:00</span>
+									</div>
+									<!-- Конец video -->
+									<h3 class="video-title">Selecting The Right Hotel</h3>
+									<div class="video_info">
+										<span class="video_counter">
+											<span class="video_views">123k views</span>
+											<span class="video_date"> 1 months ago </span>
+										</span>
+										<span class="video_chennal">Dollie Blair</span>
+									</div>
+								</div>
+								<!-- Конец video-card -->
+							</div>
+							<!-- Конец 2 слайда -->
+								<div class="swiper-slide">
+									<div class="video"> 
+										<div class="video-card">
+											<img src="/img/channel/Dollie Blairl_3-img.png" alt="Dollie Blairl-img" class="video_img">
+												 <span class="video_time">5:32</span>
+										</div>
+										<!-- Конец video -->
+										<h3 class="video-title">Asteroids</h3>
+										<div class="video_info">
+											<span class="video_counter">
+												<span class="video_views">43k views</span>
+												<span class="video_date"> 12 days ago </span>
+											</span>
+											<span class="video_chennal">Dollie Blair</span>
+										</div>
+									</div>
+									<!-- Конец video-card -->
+								</div>
+								<!-- Конец 3 слайда -->
+									<div class="swiper-slide">
+										<div class="video"> 
+											<div class="video-card">
+												<img src="/img/channel/Dollie Blairl_4-img.png" alt="Dollie Blairl-img" class="video_img">
+													 <span class="video_time">6:40</span>
+											</div>
+											<!-- Конец video -->
+											<h3 class="video-title">Telescopes 101</h3>
+											<div class="video_info">
+												<span class="video_counter">
+													<span class="video_views">11k views</span>
+													<span class="video_date"> 6 months ago </span>
+												</span>
+												<span class="video_chennal">Dollie Blair</span>
+											</div>
+										</div>
+										<!-- Конец video-card -->
+									</div>
+									<!-- Конец 4 слайда -->
+										<div class="swiper-slide">
+											<div class="video"> 
+												<div class="video-card">
+													<img src="/img/channel/Dollie Blairl_5-img.png" alt="Dollie Blairl-img" class="video_img">
+														 <span class="video_time">1:45</span>
+												</div>
+												<!-- Конец video -->
+												<h3 class="video-title">Medical Care Is Just</h3>
+												<div class="video_info">
+													<span class="video_counter">
+														<span class="video_views">18k views</span>
+														<span class="video_date"> 2 days ago </span>
+													</span>
+													<span class="video_chennal">Dollie Blair</span>
+												</div>
+											</div>
+											<!-- Конец video-card -->
+										</div>
+										<!-- Конец 5 слайда -->
+											<div class="swiper-slide">
+												<div class="video"> 
+													<div class="video-card">
+														<img src="/img/channel/Dollie Blairl_6-img.png" alt="Dollie Blairl-img" class="video_img">
+															 <span class="video_time">2:12</span>
+													</div>
+													<!-- Конец video -->
+													<h3 class="video-title">Medical Care Is Just</h3>
+													<div class="video_info">
+														<span class="video_counter">
+															<span class="video_views">67k views</span>
+															<span class="video_date"> 4 months ago</span>
+														</span>
+														<span class="video_chennal">Dollie</span>
+													</div>
+												</div>
+												<!-- Конец video-card -->
+											</div>
+											<!-- Конец 6 слайда -->
+	        <!-- Конец swiper-container -->
+	
+	           </div>
+           </div>
+				</div>
+      <!--Конец 1 ого канала-->
+				<div class="channel Recommended">
+					<div class="channel-title">
+						<a href="#" class="channel_link">
+							<span class="channel_text">Recommended</span>
+						</a>
+						<!-- If we need navigation buttons -->
+						<div class="chennal-button">
+							<div class="chennal-button-prev">
+								<svg class="icon" width="28px" height="28px">
+									<use xlink:href="/img/SVG.svg#left"></use>
+								</svg>
+							</div>
+							<div class="chennal-button-next">
+								<svg class="icon" width="28px" height="28px">
+									<use xlink:href="/img/SVG.svg#right"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<!-- Slider main container -->
+				 <div class="swiper-container channel-sliper channel-Recommended">
+				 <!-- Additional required wrapper -->
+					 <div class="swiper-wrapper">
+					 <!-- Slides -->
+						 <div class="swiper-slide">
+							 <div class="video"> 
+								 <div class="video-card">
+									 <img src="/img/channel/Recommended-img.png" alt="Recommended-img" class="video_img">
+											<span class="video_time">4:15</span>
+								 </div>
+								 <!-- Конец video -->
+								 <h3 class="video-title">Dude You Re Getting A Telescope</h3>
+								 <div class="video_info">
+									 <span class="video_counter">
+										 <span class="video_views">35k views</span>
+										 <span class="video_date">5 months ago</span>
+									 </span>
+									 <span class="video_chennal">Gussie French</span>
+								 </div>
+							 </div>
+							 <!-- Конец video-card -->
+						 </div>
+							<!-- Конец 1 слайда -->
+						 <div class="swiper-slide">
+							<div class="video"> 
+								<div class="video-card">
+									<img src="/img/channel/Recommended_2-img.png" alt="Dollie Blairl-img" class="video_img">
+										 <span class="video_time">2:12</span>
+								</div>
+								<!-- Конец video -->
+								<h3 class="video-title">Moon Gazing</h3>
+								<div class="video_info">
+									<span class="video_counter">
+										<span class="video_views">54k views</span>
+										<span class="video_date"> 11 months ago </span>
+									</span>
+									<span class="video_chennal">Edward Osborne</span>
+								</div>
+							</div>
+							<!-- Конец video-card -->
+						</div>
+						<!-- Конец 2 слайда -->
+							<div class="swiper-slide">
+								<div class="video"> 
+									<div class="video-card">
+										<img src="/img/channel/Recommended_3-img.png" alt="Dollie Blairl-img" class="video_img">
+											 <span class="video_time">2:12</span>
+									</div>
+									<!-- Конец video -->
+									<h3 class="video-title">Moon Gazing</h3>
+									<div class="video_info">
+										<span class="video_counter">
+											<span class="video_views">125k views</span>
+											<span class="video_date"> 4 months ago </span>
+										</span>
+										<span class="video_chennal">Dollie Blair</span>
+									</div>
+								</div>
+								<!-- Конец video-card -->
+							</div>
+							<!-- Конец 3 слайда -->
+				<!-- Конец swiper-container -->
+	
+					 </div>
+				 </div>
+			</div>
+			<!--Конец 2 ого канала-->
+			<div class="channel Food & Drink">
+				<div class="channel-title">
+					<a href="#" class="channel_link">
+						<img
+							src="/img/avatar/avatar-Food & Drink.png"
+							alt=""
+							class="channel_img"
+						/>
+						<span class="channel_text">Food & Drink</span>
+					</a>
+					<!-- If we need navigation buttons -->
+
+					<div class="chennal-button">
+						<div class="chennal-button-prev">
+							<svg class="icon" width="28px" height="28px">
+								<use xlink:href="/img/SVG.svg#left"></use>
+							</svg>
+						</div>
+						<div class="chennal-button-next">
+							<svg class="icon" width="28px" height="28px">
+								<use xlink:href="/img/SVG.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<!-- Slider main container -->
+			 <div class="swiper-container channel-sliper">
+			 <!-- Additional required wrapper -->
+				 <div class="swiper-wrapper">
+				 <!-- Slides -->
+					 <div class="swiper-slide">
+						 <div class="video"> 
+							 <div class="video-card">
+								 <img src="/img/channel/Food & Drink-img.png" alt="Food & Drink-img" class="video_img">
+										<span class="video_time">7:36</span>
+							 </div>
+							 <!-- Конец video -->
+							 <h3 class="video-title">Astronomy Or Astrology</h3>
+							 <div class="video_info">
+								 <span class="video_counter">
+									 <span class="video_views">240k views</span>
+									 <span class="video_date">4 months ago</span>
+								 </span>
+								 <span class="video_chennal">Food & Drink</span>
+							 </div>
+						 </div>
+						 <!-- Конец video-card -->
+					 </div>
+						<!-- Конец 1 слайда -->
+					 <div class="swiper-slide">
+						<div class="video"> 
+							<div class="video-card">
+								<img src="/img/channel/Food & Drink_2-img.png" alt="Food & Drink-img" class="video_img">
+									 <span class="video_time">2:19</span>
+							</div>
+							<!-- Конец video -->
+							<h3 class="video-title">Advertising Outdoors</h3>
+							<div class="video_info">
+								<span class="video_counter">
+									<span class="video_views">13k views</span>
+									<span class="video_date"> 15 days ago</span>
+								</span>
+								<span class="video_chennal">Food & Drink</span>
+							</div>
+						</div>
+						<!-- Конец video-card -->
+					</div>
+					<!-- Конец 2 слайда -->
+						<div class="swiper-slide">
+							<div class="video"> 
+								<div class="video-card">
+									<img src="/img/channel/Food & Drink_3-img.png" alt="Food & Drink-img" class="video_img">
+										 <span class="video_time">9:05</span>
+								</div>
+								<!-- Конец video -->
+								<h3 class="video-title">Radio Astronomy</h3>
+								<div class="video_info">
+									<span class="video_counter">
+										<span class="video_views">1k views</span>
+										<span class="video_date"> 11 months ago</span>
+									</span>
+									<span class="video_chennal">Food & Drink</span>
+								</div>
+							</div>
+							<!-- Конец video-card -->
+						</div>
+						<!-- Конец 3 слайда -->
+							<div class="swiper-slide">
+								<div class="video"> 
+									<div class="video-card">
+										<img src="/img/channel/Food & Drink_4-img.png" alt="Food & Drink" class="video_img">
+											 <span class="video_time">3:40</span>
+									</div>
+									<!-- Конец video -->
+									<h3 class="video-title">A Good Autoresponder</h3>
+									<div class="video_info">
+										<span class="video_counter">
+											<span class="video_views">45k views</span>
+											<span class="video_date"> 2 months ago </span>
+										</span>
+										<span class="video_chennal">Food & Drink</span>
+									</div>
+								</div>
+								<!-- Конец video-card -->
+							</div>
+							<!-- Конец 4 слайда -->
+								<div class="swiper-slide">
+									<div class="video"> 
+										<div class="video-card">
+											<img src="/img/channel/Food & Drink_5-img.png" alt="Food & Drink-img" class="video_img">
+												 <span class="video_time">1:56</span>
+										</div>
+										<!-- Конец video -->
+										<h3 class="video-title">Baby Monitor Technology</h3>
+										<div class="video_info">
+											<span class="video_counter">
+												<span class="video_views">86k views</span>
+												<span class="video_date"> 7 days ago </span>
+											</span>
+											<span class="video_chennal">Food & Drink</span>
+										</div>
+									</div>
+									<!-- Конец video-card -->
+								</div>
+								<!-- Конец 5 слайда -->
+									<div class="swiper-slide">
+										<div class="video"> 
+											<div class="video-card">
+												<img src="/img/channel/Food & Drink_6-img.png" alt="Food & Drink-img" class="video_img">
+													 <span class="video_time">2:12</span>
+											</div>
+											<!-- Конец video -->
+											<h3 class="video-title">Asteroids</h3>
+											<div class="video_info">
+												<span class="video_counter">
+													<span class="video_views">123k views</span>
+													<span class="video_date"> 4 months ago</span>
+												</span>
+												<span class="video_chennal">Food & Drink</span>
+											</div>
+										</div>
+										<!-- Конец video-card -->
+									</div>
+									<!-- Конец 6 слайда -->
+			<!-- Конец swiper-container -->
+
+				 </div>
+			 </div>
+		</div>
+		<!--Конец 3 ого канала-->
+		<div class="channel Food & Drink">
+			<div class="channel-title">
+				<a href="#" class="channel_link">
+					<img
+						src="/img/avatar/avatar-Food & Drink.png"
+						alt=""
+						class="channel_img"
+					/>
+					<span class="channel_text">Food & Drink</span>
+				</a>
+				<!-- If we need navigation buttons -->
+
+				<div class="chennal-button">
+					<div class="chennal-button-prev">
+						<svg class="icon" width="28px" height="28px">
+							<use xlink:href="/img/SVG.svg#left"></use>
+						</svg>
+					</div>
+					<div class="chennal-button-next">
+						<svg class="icon" width="28px" height="28px">
+							<use xlink:href="/img/SVG.svg#right"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<!-- Slider main container -->
+		 <div class="swiper-container channel-sliper">
+		 <!-- Additional required wrapper -->
+			 <div class="swiper-wrapper">
+			 <!-- Slides -->
+				 <div class="swiper-slide">
+					 <div class="video"> 
+						 <div class="video-card">
+							 <img src="/img/channel/Food & Drink-img.png" alt="Food & Drink-img" class="video_img">
+									<span class="video_time">7:36</span>
+						 </div>
+						 <!-- Конец video -->
+						 <h3 class="video-title">Astronomy Or Astrology</h3>
+						 <div class="video_info">
+							 <span class="video_counter">
+								 <span class="video_views">240k views</span>
+								 <span class="video_date">4 months ago</span>
+							 </span>
+							 <span class="video_chennal">Food & Drink</span>
+						 </div>
+					 </div>
+					 <!-- Конец video-card -->
+				 </div>
+					<!-- Конец 1 слайда -->
+				 <div class="swiper-slide">
+					<div class="video"> 
+						<div class="video-card">
+							<img src="/img/channel/Food & Drink_2-img.png" alt="Food & Drink-img" class="video_img">
+								 <span class="video_time">2:19</span>
+						</div>
+						<!-- Конец video -->
+						<h3 class="video-title">Advertising Outdoors</h3>
+						<div class="video_info">
+							<span class="video_counter">
+								<span class="video_views">13k views</span>
+								<span class="video_date"> 15 days ago</span>
+							</span>
+							<span class="video_chennal">Food & Drink</span>
+						</div>
+					</div>
+					<!-- Конец video-card -->
+				</div>
+				<!-- Конец 2 слайда -->
+					<div class="swiper-slide">
+						<div class="video"> 
+							<div class="video-card">
+								<img src="/img/channel/Food & Drink_3-img.png" alt="Food & Drink-img" class="video_img">
+									 <span class="video_time">9:05</span>
+							</div>
+							<!-- Конец video -->
+							<h3 class="video-title">Radio Astronomy</h3>
+							<div class="video_info">
+								<span class="video_counter">
+									<span class="video_views">1k views</span>
+									<span class="video_date"> 11 months ago</span>
+								</span>
+								<span class="video_chennal">Food & Drink</span>
+							</div>
+						</div>
+						<!-- Конец video-card -->
+					</div>
+					<!-- Конец 3 слайда -->
+						<div class="swiper-slide">
+							<div class="video"> 
+								<div class="video-card">
+									<img src="/img/channel/Food & Drink_4-img.png" alt="Food & Drink" class="video_img">
+										 <span class="video_time">3:40</span>
+								</div>
+								<!-- Конец video -->
+								<h3 class="video-title">A Good Autoresponder</h3>
+								<div class="video_info">
+									<span class="video_counter">
+										<span class="video_views">45k views</span>
+										<span class="video_date"> 2 months ago </span>
+									</span>
+									<span class="video_chennal">Food & Drink</span>
+								</div>
+							</div>
+							<!-- Конец video-card -->
+						</div>
+						<!-- Конец 4 слайда -->
+							<div class="swiper-slide">
+								<div class="video"> 
+									<div class="video-card">
+										<img src="/img/channel/Food & Drink_5-img.png" alt="Food & Drink-img" class="video_img">
+											 <span class="video_time">1:56</span>
+									</div>
+									<!-- Конец video -->
+									<h3 class="video-title">Baby Monitor Technology</h3>
+									<div class="video_info">
+										<span class="video_counter">
+											<span class="video_views">86k views</span>
+											<span class="video_date"> 7 days ago </span>
+										</span>
+										<span class="video_chennal">Food & Drink</span>
+									</div>
+								</div>
+								<!-- Конец video-card -->
+							</div>
+							<!-- Конец 5 слайда -->
+								<div class="swiper-slide">
+									<div class="video"> 
+										<div class="video-card">
+											<img src="/img/channel/Food & Drink_6-img.png" alt="Food & Drink-img" class="video_img">
+												 <span class="video_time">2:12</span>
+										</div>
+										<!-- Конец video -->
+										<h3 class="video-title">Asteroids</h3>
+										<div class="video_info">
+											<span class="video_counter">
+												<span class="video_views">123k views</span>
+												<span class="video_date"> 4 months ago</span>
+											</span>
+											<span class="video_chennal">Food & Drink</span>
+										</div>
+									</div>
+									<!-- Конец video-card -->
+								</div>
+								<!-- Конец 6 слайда -->
+		<!-- Конец swiper-container -->
+
+			 </div>
+		 </div>
+	</div>
+      </main>
+    </div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="/js/main.js"></script>
+  </body>
+</html>
